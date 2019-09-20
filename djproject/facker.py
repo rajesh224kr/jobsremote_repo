@@ -21,7 +21,6 @@ def populate(n):
         feligibility = fake.random_element(elements=("B.Tech","M.Tech","MCA"))
         faddress= fake.address()
         femail = fake.email()
-        fmobile=980088008
         fphonenumber = phonenumbergen()
         hydjobs_record = Noidajobsinfo.objects.get_or_create(Date=fdate,Company=fcompany,Title=ftitle,Eligibility=feligibility,Address=faddress,Email=femail,PhoneNumber=fphonenumber)
 populate(25)
